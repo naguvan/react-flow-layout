@@ -1,0 +1,56 @@
+{
+  "name": "react-flow-layout-demo",
+  "version": "1.5.0",
+  "description": "react-flow-layout demo",
+  "repository": "https://github.com/naguvan/react-flow-layout.git",
+  "author": "naguvan <naguvan@outlook.com>",
+  "license": "MIT",
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/naguvan/react-flow-layout/issues"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "prebuild": "npm run lint && npm run clean",
+    "clean": "rimraf build",
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject",
+    "lint": "tslint -p .",
+    "precommit": "npm run lint && pretty-quick --staged",
+    "pretty": "prettier --write src/**/*.{ts,tsx}"
+  },
+  "dependencies": {
+    "@material-ui/core": "3.2.0",
+    "classnames": "2.2.6",
+    "jss": "9.8.7",
+    "jss-preset-default": "4.5.0",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
+    "react-jss": "8.6.1",
+    "reflect-metadata": "0.1.12",
+    "react-flow-layout": "1.5.0"
+  },
+  "devDependencies": {
+    "@types/classnames": "2.2.6",
+    "@types/react": "16.4.16",
+    "@types/react-dom": "16.0.9",
+    "@types/react-jss": "8.6.0",
+    "cross-env": "5.2.0",
+    "husky": "1.1.1",
+    "jest": "23.6.0",
+    "prettier": "1.14.3",
+    "pretty-quick": "1.7.0",
+    "rimraf": "2.6.2",
+    "ts-jest": "23.10.4",
+    "ts-loader": "5.2.1",
+    "ts-node": "7.0.1",
+    "tslint": "5.11.0",
+    "tslint-config-prettier": "1.15.0",
+    "tslint-loader": "3.5.4",
+    "tslint-react": "3.6.0",
+    "typescript": "3.1.2",
+    "react-scripts-ts": "3.1.0"
+  }
+}
